@@ -6,7 +6,7 @@ namespace Cadastro_Pessoa_FS1.Classes
     {
 
         public string ?nome { get; set; }
-        public string ?endereço { get; set; }        
+        public Endereco ?endereco { get; set; }        
         public float ?rendimento { get; set; }            
 
 
