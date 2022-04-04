@@ -1,0 +1,15 @@
+C:\Users\joelm\Desktop\Cursos Programação\Full Stack - Senai\BackEnd\SA2\Cadastro Pessoa FS1\bin\Debug\net6.0\Cadastro Pessoa FS1.exe
+C:\Users\joelm\Desktop\Cursos Programação\Full Stack - Senai\BackEnd\SA2\Cadastro Pessoa FS1\bin\Debug\net6.0\Cadastro Pessoa FS1.deps.json
+C:\Users\joelm\Desktop\Cursos Programação\Full Stack - Senai\BackEnd\SA2\Cadastro Pessoa FS1\bin\Debug\net6.0\Cadastro Pessoa FS1.runtimeconfig.json
+C:\Users\joelm\Desktop\Cursos Programação\Full Stack - Senai\BackEnd\SA2\Cadastro Pessoa FS1\bin\Debug\net6.0\Cadastro Pessoa FS1.dll
+C:\Users\joelm\Desktop\Cursos Programação\Full Stack - Senai\BackEnd\SA2\Cadastro Pessoa FS1\bin\Debug\net6.0\Cadastro Pessoa FS1.pdb
+C:\Users\joelm\Desktop\Cursos Programação\Full Stack - Senai\BackEnd\SA2\Cadastro Pessoa FS1\obj\Debug\net6.0\Cadastro Pessoa FS1.csproj.AssemblyReference.cache
+C:\Users\joelm\Desktop\Cursos Programação\Full Stack - Senai\BackEnd\SA2\Cadastro Pessoa FS1\obj\Debug\net6.0\Cadastro Pessoa FS1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joelm\Desktop\Cursos Programação\Full Stack - Senai\BackEnd\SA2\Cadastro Pessoa FS1\obj\Debug\net6.0\Cadastro Pessoa FS1.AssemblyInfoInputs.cache
+C:\Users\joelm\Desktop\Cursos Programação\Full Stack - Senai\BackEnd\SA2\Cadastro Pessoa FS1\obj\Debug\net6.0\Cadastro Pessoa FS1.AssemblyInfo.cs
+C:\Users\joelm\Desktop\Cursos Programação\Full Stack - Senai\BackEnd\SA2\Cadastro Pessoa FS1\obj\Debug\net6.0\Cadastro Pessoa FS1.csproj.CoreCompileInputs.cache
+C:\Users\joelm\Desktop\Cursos Programação\Full Stack - Senai\BackEnd\SA2\Cadastro Pessoa FS1\obj\Debug\net6.0\Cadastro Pessoa FS1.dll
+C:\Users\joelm\Desktop\Cursos Programação\Full Stack - Senai\BackEnd\SA2\Cadastro Pessoa FS1\obj\Debug\net6.0\refint\Cadastro Pessoa FS1.dll
+C:\Users\joelm\Desktop\Cursos Programação\Full Stack - Senai\BackEnd\SA2\Cadastro Pessoa FS1\obj\Debug\net6.0\Cadastro Pessoa FS1.pdb
+C:\Users\joelm\Desktop\Cursos Programação\Full Stack - Senai\BackEnd\SA2\Cadastro Pessoa FS1\obj\Debug\net6.0\Cadastro Pessoa FS1.genruntimeconfig.cache
+C:\Users\joelm\Desktop\Cursos Programação\Full Stack - Senai\BackEnd\SA2\Cadastro Pessoa FS1\obj\Debug\net6.0\ref\Cadastro Pessoa FS1.dll
