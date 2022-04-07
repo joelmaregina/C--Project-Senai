@@ -6,9 +6,9 @@ namespace Cadastro_Pessoa_FS1.Classes
 
     {
 
-        public string ?cpf { get; set; }
+        public string? cpf { get; set; }
 
-        public String ?dataNascimento { get; set; }     
+        public string? dataNascimento { get; set; }     
         
                
         public bool ValidarDataNascimento(DateTime dataNasc)
