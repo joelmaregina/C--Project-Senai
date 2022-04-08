@@ -54,7 +54,7 @@ do
             novaPf.endereco = novoEnd;
 
 
-            bool dataValida = metodoPf.ValidarDataNascimento(novaPf.dataNascimento);
+            // bool dataValida = metodoPf.ValidarDataNascimento(novaPf.dataNascimento);
 
             //Console.WriteLine("Nome: " + novaPF.nome);
             // Console.WriteLine($"Nome: {novaPf.nome}");
@@ -65,7 +65,8 @@ do
             Console.WriteLine(@$"
             Nome: {novaPf.nome}
             Endereço: {novaPf.endereco.logradouro}, numero: {novaPf.endereco.numero}, complemento: {novaPf.endereco.complemento}
-            Maior de idade: {dataValida}
+            Maior de idade: {(metodoPf.ValidarDataNascimento(novaPf.dataNascimento) ? "Sim" : "Não" )}
+            Taxa de imposto a ser paga é: {metodoPf.PagarImposto(novaPf.rendimento).ToString("C")}
             ");
 
 
@@ -103,8 +104,9 @@ do
             Nome: {novaPj.nome}
             Razão Social: {novaPj.razaoSocial}
             CNPJ: {novaPj.cnpj}
-            CNPJ válido: {metodoPj.ValidadrCnpj(novaPj.cnpj)}
+            CNPJ válido: {(metodoPj.ValidadrCnpj(novaPj.cnpj) ? "Sim" : "Não")}
             Endereço: {novaPj.endereco.logradouro}, numero: {novaPj.endereco.numero}, complemento: {novaPj.endereco.complemento}
+            Taxa de imposto a ser paga é: {metodoPj.PagarImposto(novaPj.rendimento).ToString("C")}
             ");
 
             //  Console.WriteLine($"{metodoPj.ValidadrCnpj("00.000.000/0000-00")}");
