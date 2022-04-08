@@ -38,7 +38,7 @@ namespace Cadastro_Pessoa_FS1.Classes
 
             Console.WriteLine($"{anos}");
 
-            if (anos >=18){
+            if (anos >=18 && anos < 130){
                 return true;
             }
 
