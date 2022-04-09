@@ -1,0 +1,11 @@
+
+                                        Nome da empresa:GameCenter
+                                        Razão Social: GameMania
+                                        CNPJ: 12345678000100
+                                        Logradouro: Rua do Senai
+                                        CEP: 400040004
+                                        Número: 610
+                                        Complemento: Em frente á padaria Doce Pão
+                                        Cidade: Belo Horizonte
+                                        Estado: Minas Gerais
+                                        

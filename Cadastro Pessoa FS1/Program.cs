@@ -113,8 +113,27 @@ do
                         }                       
 
                         novaPf.endereco = novoEnd;
+                        //***************************************************
+                        //listaPf.Add(novaPf);
 
-                        listaPf.Add(novaPf);
+                        //StreamWriter sw = new StreamWriter($"{novaPf.nome}.text");
+                        //sw.Write(novaPf.nome);
+                        //sw.Close();
+                        // Garante o fechamento sem o precisar usar o "sw.CLose();" :
+                        using (StreamWriter sw = new StreamWriter($"{novaPf.nome}.txt"))
+                        {
+                            sw.WriteLine(@$"
+                            Nome:{novaPf.nome}
+                            Data de Nascimento: {novaPf.dataNascimento}
+                            CPF: {novaPf.cpf}
+                            Logradouro: {novaPf.endereco.logradouro}
+                            CEP: {novaPf.endereco.cep}
+                            Número: {novaPf.endereco.numero}
+                            Complemento: {novaPf.endereco.complemento}
+                            Cidade: {novaPf.endereco.cidade}
+                            Estado: {novaPf.endereco.estado}
+                            ");
+                        }
 
                         Console.ForegroundColor = ConsoleColor.DarkGreen;
                         Console.WriteLine($"Cadastro realizado com sucesso!");
@@ -136,12 +155,27 @@ do
                                 Data de Nascimento: {cadaPessoa.dataNascimento}
                                 Taxa de imposto a ser paga é: {metodoPf.PagarImposto(cadaPessoa.rendimento).ToString("C")}
                                 ");
+                        Console.WriteLine($"Aperte 'ENTER' para continuar");
+                        Console.ReadLine();
                             }                            
                         } else {
                             Console.WriteLine($"Lista vazia!");
                             Thread.Sleep(2500);
                             
-                        }                      
+                        }
+
+                        using (StreamReader sr =  new StreamReader("joelmaregina.txt"))
+                        {
+                            string linha;
+                            while ((linha = sr.ReadLine()) != null)
+                            {
+                              Console.WriteLine($"{linha}");
+                            }
+                        }
+                        
+                        Console.WriteLine($"Aperte 'ENTER' para continuar");
+                        Console.ReadLine();
+
                         break;
                     case "0":
                         break;
@@ -234,7 +268,22 @@ do
 
                                     novaPj.endereco = novoEnd;
 
-                                    listaPj.Add(novaPj);
+                                    //listaPj.Add(novaPj);
+
+                                    using (StreamWriter sw = new StreamWriter($"{novaPj.nome}.txt"))
+                                    {
+                                        sw.WriteLine(@$"
+                                        Nome da empresa:{novaPj.nome}
+                                        Razão Social: {novaPj.razaoSocial}
+                                        CNPJ: {novaPj.cnpj}
+                                        Logradouro: {novaPj.endereco.logradouro}
+                                        CEP: {novaPj.endereco.cep}
+                                        Número: {novaPj.endereco.numero}
+                                        Complemento: {novaPj.endereco.complemento}
+                                        Cidade: {novaPj.endereco.cidade}
+                                        Estado: {novaPj.endereco.estado}
+                                        ");
+                                    }
 
                                     Console.ForegroundColor = ConsoleColor.DarkGreen;
                                     Console.WriteLine($"Cadastro realizado com sucesso!");
@@ -256,7 +305,10 @@ do
                                             Endereço: {cadaPessoa.endereco.logradouro}, numero: {cadaPessoa.endereco.numero}, complemento: {cadaPessoa.endereco.complemento}
                                             Taxa de imposto a ser paga é: {cadaPessoa.PagarImposto(cadaPessoa.rendimento).ToString("C")}
                                             ");
-                                        }                            
+                                        }
+
+                                        Console.WriteLine($"Aperte 'ENTER' para continuar");
+                                        Console.ReadLine();                           
                                     } else {
                                         Console.WriteLine($"Lista vazia!");
                                         Thread.Sleep(2500);
