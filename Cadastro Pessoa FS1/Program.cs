@@ -13,7 +13,7 @@ Console.WriteLine(@$"
 BarraCarregamento("Carregando", 500);
 
 List<PessoaFisica> listaPf = new List<PessoaFisica>();
-List<PessoaJuridica> listaPj = new List<PessoaJuridica>();
+//List<PessoaJuridica> listaPj = new List<PessoaJuridica>();
 
 string? opcao;
 do
@@ -164,7 +164,7 @@ do
                             
                         }
 
-                        using (StreamReader sr =  new StreamReader("joelmaregina.txt"))
+                        using (StreamReader sr =  new StreamReader("Joelma Regina.txt"))
                         {
                             string linha;
                             while ((linha = sr.ReadLine()) != null)
@@ -268,22 +268,26 @@ do
 
                                     novaPj.endereco = novoEnd;
 
+                                    metodoPj.Inserir(novaPj);
+
                                     //listaPj.Add(novaPj);
 
-                                    using (StreamWriter sw = new StreamWriter($"{novaPj.nome}.txt"))
-                                    {
-                                        sw.WriteLine(@$"
-                                        Nome da empresa:{novaPj.nome}
-                                        Razão Social: {novaPj.razaoSocial}
-                                        CNPJ: {novaPj.cnpj}
-                                        Logradouro: {novaPj.endereco.logradouro}
-                                        CEP: {novaPj.endereco.cep}
-                                        Número: {novaPj.endereco.numero}
-                                        Complemento: {novaPj.endereco.complemento}
-                                        Cidade: {novaPj.endereco.cidade}
-                                        Estado: {novaPj.endereco.estado}
-                                        ");
-                                    }
+
+                                    // Escreve um arquivo TXT:
+                                    // using (StreamWriter sw = new StreamWriter($"{novaPj.nome}.txt"))
+                                    // {
+                                    //     sw.WriteLine(@$"
+                                    //     Nome da empresa:{novaPj.nome}
+                                    //     Razão Social: {novaPj.razaoSocial}
+                                    //     CNPJ: {novaPj.cnpj}
+                                    //     Logradouro: {novaPj.endereco.logradouro}
+                                    //     CEP: {novaPj.endereco.cep}
+                                    //     Número: {novaPj.endereco.numero}
+                                    //     Complemento: {novaPj.endereco.complemento}
+                                    //     Cidade: {novaPj.endereco.cidade}
+                                    //     Estado: {novaPj.endereco.estado}
+                                    //     ");
+                                    // }
 
                                     Console.ForegroundColor = ConsoleColor.DarkGreen;
                                     Console.WriteLine($"Cadastro realizado com sucesso!");
@@ -294,26 +298,36 @@ do
                                 case "2":
                                     Console.Clear();
 
-                                    if (listaPj.Count > 0)
-                                    {
-                                        foreach (PessoaJuridica cadaPessoa in listaPj)
-                                        {                                            
-                                            Console.WriteLine(@$"
-                                            Nome: {cadaPessoa.nome}
-                                            Razão Social: {cadaPessoa.razaoSocial}
-                                            CNPJ: {cadaPessoa.cnpj}
-                                            Endereço: {cadaPessoa.endereco.logradouro}, numero: {cadaPessoa.endereco.numero}, complemento: {cadaPessoa.endereco.complemento}
-                                            Taxa de imposto a ser paga é: {cadaPessoa.PagarImposto(cadaPessoa.rendimento).ToString("C")}
-                                            ");
-                                        }
+                                    List<PessoaJuridica> listaPj = metodoPj.Ler();
 
-                                        Console.WriteLine($"Aperte 'ENTER' para continuar");
-                                        Console.ReadLine();                           
-                                    } else {
-                                        Console.WriteLine($"Lista vazia!");
-                                        Thread.Sleep(2500);
-                                        
-                                    }                      
+                                    foreach (PessoaJuridica cadaItem in listaPj)
+                                    {
+                                        Console.WriteLine(@$"
+                                        Nome da empresa:{cadaItem.nome}
+                                        Razão Social: {cadaItem.razaoSocial}
+                                        CNPJ: {cadaItem.cnpj}
+                                        ");
+                                    }
+
+                                    // if (listaPj.Count > 0)
+                                    // {
+                                    //     foreach (PessoaJuridica cadaPessoa in listaPj)
+                                    //     {                                            
+                                    //         Console.WriteLine(@$"
+                                    //         Nome: {cadaPessoa.nome}
+                                    //         Razão Social: {cadaPessoa.razaoSocial}
+                                    //         CNPJ: {cadaPessoa.cnpj}
+                                    //         Endereço: {cadaPessoa.endereco.logradouro}, numero: {cadaPessoa.endereco.numero}, complemento: {cadaPessoa.endereco.complemento}
+                                    //         Taxa de imposto a ser paga é: {cadaPessoa.PagarImposto(cadaPessoa.rendimento).ToString("C")}
+                                    //         ");
+                                    //     }
+
+                                    //     Console.WriteLine($"Aperte 'ENTER' para continuar");
+                                    //     Console.ReadLine();                           
+                                    // } else {
+                                    //     Console.WriteLine($"Lista vazia!");
+                                    //     Thread.Sleep(2500);
+                                    // }                      
                                     break;
                                 case "0":
                                     break;
