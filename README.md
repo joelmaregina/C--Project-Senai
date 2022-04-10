@@ -8,7 +8,7 @@ _Sistema desenvolvido pela empresa Troppo, com o objetivo de desenvolver um sist
 
 ## 📌 Features _(Funcionalidades)_ :
 
-#### ♦ The developed system has these characteristics and functionalities _(O sistema desenvolvido possui as demais caracteristicas e funcionalides)_ :
+#### ♦ The developed system has these characteristics and functionalities _(O sistema desenvolvido possui as demais caracteristicas e funcionalidades)_ :
 -  The system stores the records of  natural people and juridical people; _(O sistema armazena os cadastros das pessoas físicas e jurídicas)_ ;
 - The registration of  natural people is done with the following data: name, CPF and date of birth; _(O cadastro das pessoas físicas é feito com os seguintes dados: nome, CPF e data de nascimento)_;
 - The registration of juridical people is done with the following data: name, CNPJ and corporate name; _(O cadastro das pessoas jurídicas é feito com os seguintes dados: nome, CNPJ e razão social)_;
@@ -42,7 +42,7 @@ _Sistema desenvolvido pela empresa Troppo, com o objetivo de desenvolver um sist
 
  ## :heavy_check_mark: Installation prerequisites _(Pré-requisitos de instalação)_ :
 
-- This project was developed with Windows 10 OS, Visual Studio Code IDE and DotNet 6.0 Framework (SDK) _(Este projeto foi desenvolvido com o SO Windows 10, IDE Visual Studio Code e o Framework DotNet 6.0 (SDK))_.
+- This project was developed with **Windows 10 OS**, **Visual Studio Code** IDE and **DotNet 6.0 Framework** (SDK) _(Este projeto foi desenvolvido com o SO Windows 10, IDE Visual Studio Code e o Framework DotNet 6.0 (SDK))_.
 
 [![Visual Studio Code](https://img.shields.io/badge/VisualStudioCode-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white"/)](https://code.visualstudio.com/)
 [![.Net](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white)](https://dotnet.microsoft.com/en-us/download)
@@ -82,8 +82,8 @@ dotnet --version
 
 ## :handshake: Contributors (Contribuidores):
 
-♦ [Joelma Regina - Junior FullStack Developer (Troppo)](https://github.com/joelmaregina)
+♦ [Joelma Regina - Junior FullStack Developer (Troppo**)](https://github.com/joelmaregina)
 <hr>
 
-###### ***This work is part of the activities of the Senai EAD school's Fullstack course. _(Este trabalho faz parte das atividades do curso Fullstack da escola Senai EAD;)_;
-###### ***Troppo is a fictitious company used during to the development of this activity. _(A Troppo é uma empresa fictícia utilizada durante o desenvolvimento desta atividade)_
+###### *This work is part of the activities of the Senai EAD school's Fullstack course. _(Este trabalho faz parte das atividades do curso Fullstack da escola Senai EAD;)_;
+###### **Troppo is a fictitious company used during to the development of this activity. _(A Troppo é uma empresa fictícia utilizada durante o desenvolvimento desta atividade)_
