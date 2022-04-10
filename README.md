@@ -9,16 +9,11 @@ _Sistema desenvolvido pela empresa Troppo, com o objetivo de desenvolver um sist
 ## 📌 Features _(Funcionalidades)_ :
 
 #### ♦ The developed system has these characteristics and functionalities _(O sistema desenvolvido possui as demais caracteristicas e funcionalides)_ :
--  The system stores the records of  natural people and juridical people;
-    ##### • _O sistema armazena os cadastros das pessoas físicas e jurídicas_ ;
-- The registration of  natural people is done with the following data: name, CPF and date of birth;
-    ##### • _O cadastro das pessoas físicas é feito com os seguintes dados: nome, CPF e data de nascimento_;
-- The registration of juridical people is done with the following data: name, CNPJ and corporate name;
-    ##### • _O cadastro das pessoas jurídicas é feito com os seguintes dados: nome, CNPJ e razão social_;
-- Both have an address and indicate whether the address is business or residential;
-    ##### • _Ambos possuem um endereço e indicam se o endereço é comercial ou residencial_;
-- The system stores the records in files (".txt" and ".csv" extensions).
-    ##### • _O sistema armazena os registros em arquivos (extensões ".txt" e ".csv")_.
+-  The system stores the records of  natural people and juridical people; _(O sistema armazena os cadastros das pessoas físicas e jurídicas)_ ;
+- The registration of  natural people is done with the following data: name, CPF and date of birth; _(O cadastro das pessoas físicas é feito com os seguintes dados: nome, CPF e data de nascimento)_;
+- The registration of juridical people is done with the following data: name, CNPJ and corporate name; _(O cadastro das pessoas jurídicas é feito com os seguintes dados: nome, CNPJ e razão social)_;
+- Both have an address and indicate whether the address is business or residential; _(Ambos possuem um endereço e indicam se o endereço é comercial ou residencial)_;
+- The system stores the records in files (".txt" and ".csv" extensions). _(O sistema armazena os registros em arquivos (extensões ".txt" e ".csv"))_.
 
 <br>
 
@@ -61,7 +56,7 @@ To run the program, you must have downloaded and installed the [**.NET 6 SDK**](
 1. Open the terminal of your choice and clone the project _(Abra o terminal da sua preferencia e clone o projeto)_ :
 
 ````
-git clone https://github.com/cloudgirlsin/CrecheTiaSol.git
+git clone https://github.com/joelmaregina/CSharp-Project-Senai
 ````
 
 2. Enter in the directory and run the project _(Entre no diretório e execute o projeto)_ :
