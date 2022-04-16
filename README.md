@@ -1,4 +1,4 @@
-# :computer: ClientLab System :woman_student:
+# :computer: ClientLab System  :clipboard:
 
 System developed by the company Troppo, with the objective of developing a customized system for registering and managing clients.
 
